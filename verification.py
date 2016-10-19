@@ -55,3 +55,8 @@ for i in range(1,len(ids)+1):
         print("[Errno {0}] {1}".format(e.errno, e.strerror))
 text_file.writelines("\n")
 
+file = open("output.txt", "rb")
+fl =file.readlines()
+for x in fl:
+    print(x)
+
